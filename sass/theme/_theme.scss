@@ -1,1 +1,53 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+  @if $inset {
+    -webkit-box-shadow:inset $top $left $blur $color;
+    -moz-box-shadow:inset $top $left $blur $color;
+    box-shadow:inset $top $left $blur $color;
+  } @else {
+    -webkit-box-shadow: $top $left $blur $color;
+    -moz-box-shadow: $top $left $blur $color;
+    box-shadow: $top $left $blur $color;
+  }
+}
+
+.row {
+  justify-content: center;
+}
+.card {
+  width: 350px;
+  margin: 5px;
+  @include box-shadow(5px, 5px, 8px, #CCC);
+
+  &:hover {
+    @include box-shadow(5px, 7px, 10px, #CCC);
+  }
+  a {
+    color: $header-color;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+.card-block {
+  padding-left: 5px;
+}
+.navbar-collapse {
+  flex-grow: 0;
+}
+.navbar {
+  background-color: $header-color;
+  @include box-shadow(3px, 5px, 5px, #CCC);
+  &:hover {
+    @include box-shadow(3px, 7px, 5px, #CCC);
+  }
+  @media screen and (min-width: $break-big) {
+    height: 100px;
+  }
+
+}
+
+nav {
+
+}
