@@ -26,7 +26,6 @@
 
  					<div class="row">
             <div class="card-columns">
- 						<div class="md-col-4">
 
  							<div class="card">
  								<a>
@@ -36,10 +35,10 @@
  									<p class="card-text"><?php the_field('card_1_description'); ?></p>
  								</div>
  								</a>
- 							</div>
+
 
  						</div>
- 						<div class="md-col-4">
+
  							<div class="card">
  								<a>
  								<img class="card-img-top" onclick="openModal();currentSlide(2)" src=<?php the_field('card_2_image'); ?> alt="Stills Image">
@@ -49,8 +48,8 @@
  								</div>
  								</a>
  							</div>
- 						</div>
- 						<div class="md-col-4">
+
+
  							<div class="card">
  								<a>
  								<img class="card-img-top" onclick="openModal();currentSlide(3)" src=<?php the_field('card_3_image'); ?> alt="Commercials Image">
@@ -60,9 +59,9 @@
  								</div>
  							</a>
  							</div>
- 						</div>
 
- 						<div class="md-col-4">
+
+
 
  							<div class="card">
  								<a>
@@ -74,8 +73,8 @@
  								</a>
  							</div>
 
- 						</div>
- 						<div class="md-col-4">
+
+
  							<div class="card">
  								<a>
  								<img class="card-img-top" onclick="openModal();currentSlide(5)" src=<?php the_field('card_5_image'); ?> alt="Stills Image">
@@ -85,8 +84,8 @@
  								</div>
  								</a>
  							</div>
- 						</div>
- 						<div class="md-col-4">
+
+
  							<div class="card">
  								<a>
  								<img class="card-img-top" onclick="openModal();currentSlide(6)" src=<?php the_field('card_6_image'); ?> alt="Commercials Image">
@@ -97,7 +96,7 @@
  							</a>
  							</div>
  						</div>
-          </div>
+    
  					</div>
 
 

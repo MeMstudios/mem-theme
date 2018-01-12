@@ -22,7 +22,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<main class="site-main" id="main" role="main">
 
 					<div class="row">
-						<div class="md-col-4">
+						<div class="col-md-4">
 
 							<div class="card">
 								<a href="index.php/film">
@@ -35,7 +35,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							</div>
 
 						</div>
-						<div class="md-col-4">
+						<div class="col-md-4">
 							<div class="card">
 								<a href="index.php/stills">
 								<img class="card-img-top" src=<?php the_field('card_2_image'); ?> alt="Stills Image">
@@ -46,7 +46,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 								</a>
 							</div>
 						</div>
-						<div class="md-col-4">
+						<div class="col-md-4">
 							<div class="card">
 								<a href="index.php/commercials">
 								<img class="card-img-top" src=<?php the_field('card_3_image'); ?> alt="Commercials Image">
