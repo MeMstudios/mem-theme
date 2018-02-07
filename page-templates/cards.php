@@ -23,18 +23,17 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 					<div class="row">
 						<div class="col-md-4">
-
 							<div class="card">
-								<a href="index.php/film">
-								<img class="card-img-top" src=<?php the_field('card_1_image'); ?> alt="Film Image">
+								<a href="index.php/commercials">
+								<img class="card-img-top" src=<?php the_field('card_3_image'); ?> alt="Commercials Image">
 								<div class="card-block">
-									<h2 class="card-title"><?php the_field('card_1_title'); ?></h2>
-									<p class="card-text"><?php the_field('card_1_description'); ?></p>
+									<h2 class="card-title"><?php the_field('card_3_title'); ?></h2>
+									<p class="card-text"><?php the_field('card_3_description'); ?></p>
 								</div>
-								</a>
+							</a>
 							</div>
-
 						</div>
+
 						<div class="col-md-4">
 							<div class="card">
 								<a href="index.php/stills">
@@ -46,16 +45,19 @@ $container = get_theme_mod( 'understrap_container_type' );
 								</a>
 							</div>
 						</div>
+
 						<div class="col-md-4">
+
 							<div class="card">
-								<a href="index.php/commercials">
-								<img class="card-img-top" src=<?php the_field('card_3_image'); ?> alt="Commercials Image">
+								<a href="index.php/film">
+								<img class="card-img-top" src=<?php the_field('card_1_image'); ?> alt="Film Image">
 								<div class="card-block">
-									<h2 class="card-title"><?php the_field('card_3_title'); ?></h2>
-									<p class="card-text"><?php the_field('card_3_description'); ?></p>
+									<h2 class="card-title"><?php the_field('card_1_title'); ?></h2>
+									<p class="card-text"><?php the_field('card_1_description'); ?></p>
 								</div>
-							</a>
+								</a>
 							</div>
+
 						</div>
 					</div>
 

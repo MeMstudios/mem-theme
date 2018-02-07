@@ -78,3 +78,33 @@ require get_template_directory() . '/inc/editor.php';
 @ini_set( 'upload_max_size' , '64M' );
 @ini_set( 'post_max_size', '64M');
 @ini_set( 'max_execution_time', '300' );
+
+
+/*
+* Custom Post types
+*/
+function create_post_types() {
+  register_post_type( 'still',
+    array(
+      'labels' => array(
+        'name' => __( 'Stills' ),
+        'singular_name' => __( 'Still' )
+      ),
+      'public' => true,
+      'has_archive' => true,
+      'supports' => array('title')
+    )
+  );
+  register_post_type( 'video',
+    array(
+      'labels' => array(
+        'name' => __( 'Videos' ),
+        'singular_name' => __( 'Video' )
+      ),
+      'public' => true,
+      'has_archive' => true,
+      'supports' => array('title', 'thumbnail')
+    )
+  );
+}
+add_action( 'init', 'create_post_types' );
