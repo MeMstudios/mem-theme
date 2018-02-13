@@ -32,15 +32,16 @@
             <div class="card-columns">
               <?php
               while ( $loop->have_posts() ) : $loop->the_post();
-
+                $image_obj = get_field('image');
+                $image = $image_obj['sizes']['large'];
               ?>
 
  							<div class="card">
  								<a>
- 								<img class="card-img-top" onclick="openModal();currentSlide(<?php echo $slide ?>)" src=<?php the_field('image'); ?> alt="Stills Image">
+ 								<img class="card-img-top" onclick="openModal();currentSlide(<?php echo $slide ?>)" src=<?php echo $image; ?> alt=<?php echo $image_obj['alt']; ?>>
  								<div class="card-block">
  									<h2 class="card-title"><?php the_title(); ?></h2>
-
+                  <p class="card-text"><?php the_field('image_description'); ?></p>
  								</div>
  								</a>
               </div>
@@ -66,11 +67,13 @@
     <span class="close cursor" onclick="closeModal()">&times;</span>
     <div class="modal-content">
       <?php
-      while ( $loop->have_posts() ) : $loop->the_post();
+        while ( $loop->have_posts() ) : $loop->the_post();
+          $image_obj = get_field('image');
+          $image = $image_obj['sizes']['large'];
       ?>
       <div class="mySlides">
 
-        <img src=<?php the_field('image'); ?> style="width:100%">
+        <img src=<?php echo $image; ?> style="width:100%">
       </div>
     <?php endwhile; ?>
 

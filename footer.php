@@ -25,7 +25,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 					<div class="site-info">
 
-							&copy 2017 Mary Eagan Murphy <span class="sep"> | </span> MeM Theme by MeM Studios.
+							&copy 2018 Mary Eagan Murphy <span class="sep"> | </span> <a href="mailto:memurphy7866@gmail.com?subject=feedback">memurphy7866@gmail.com</a> <span class="sep"> | </span> (859) 391-7866
 					</div><!-- .site-info -->
 
 				</footer><!-- #colophon -->
