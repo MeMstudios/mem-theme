@@ -9454,7 +9454,7 @@ body {
     .navbar {
       height: 100px; } }
 
-/*lightbox crap*/
+/* lightbox stuff */
 .modal {
   display: none;
   position: fixed;
