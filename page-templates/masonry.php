@@ -73,7 +73,7 @@
       ?>
       <div class="mySlides">
 
-        <img src=<?php echo $image; ?> style="width:100%">
+        <img src=<?php echo $image; ?> >
       </div>
     <?php endwhile; ?>
 
