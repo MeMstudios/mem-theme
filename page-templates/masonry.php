@@ -87,4 +87,13 @@
  </div><!-- Wrapper end -->
 
  <script src="<?php echo get_template_directory_uri();?>/js/lightbox.js"></script>
+
+ <script>
+  var modal = document.getElementById('myModal');
+  window.onclick = function(event){
+    if (event.target == modal) {
+      closeModal();
+    }
+  }
+ </script>
  <?php get_footer(); ?>
